@@ -15,20 +15,23 @@ $ pip install --index-url https://test.pypi.org/simple/ bayes_cluster
 
 # Cluster Function
 
- ```bash
-  >>> from SECEdgar.crawler import SecCrawler
-  >>> secCrawler = SecCrawler()
-  >>> secCrawler.filing_10K('AAPL', '0000320193', '20010101', '10')
+```python
+  >>> from bayes_cluster import cluster
+  >>> cluster.clust()
+  >>> clust(X,alpha,kappa0,v0,mu0,eta0,k)
    ```
 
-
+```bash
 X: Features of the data set, must be a numpy array
 alpha:parameter to be set based on the number of clusters
 kappa0,v0,mu0,eta0 : See the report for explanations
 k: number of clusters to be determined
+```
 
 Returns a y, tree
+
 y:numpy array giving the classifications of each observations
+
 tree: A tree structure which uses nodes, can be further used in the impurity calculations
 
 # Impurity Calculation
@@ -36,10 +39,12 @@ tree: A tree structure which uses nodes, can be further used in the impurity cal
   >>>from bayes_cluster import measures
   >>>measures.impurity(tree,yhat,y,n=500)
   ```
+```bash
 tree: Tree structure given by the algorithm
 yhat: Classification predictions
 y:Original classifications 
 n=Number of iterations
+```
 
 
 
