@@ -7,16 +7,40 @@ An hiearchichal clustering method which uses a multvariate normal distribution a
 
 Package is downloadable and installable via pip
 
-$ pip install bayesian_clustering
+$ pip install bayes_clustering
 
 or
 
-$ pip install --index-url https://test.pypi.org/simple/ bayesianclusteringv2
+$ pip install --index-url https://test.pypi.org/simple/ bayes_cluster
 
-or
+# Cluster Function
 
-$ git clone https://github.com/rahulrrixe/Stat663FinalProject-Matt_Yamac.git
-$ cd
+>>>from bayes_cluster import cluster
+
+>>>y_hat,tree=cluster.clust(X,alpha,kappa0,v0,mu0,eta0,k=3)
+
+X: Features of the data set, must be a numpy array
+alpha:parameter to be set based on the number of clusters
+kappa0,v0,mu0,eta0 : See the report for explanations
+k: number of clusters to be determined
+
+Returns a y, tree
+y:numpy array giving the classifications of each observations
+tree: A tree structure which uses nodes, can be further used in the impurity calculations
+
+# Impurity Calculation
+
+>>>from bayes_cluster import measures
+
+>>>measures.impurity(tree,yhat,y,n=500)
+
+tree: Tree structure given by the algorithm
+yhat: Classification predictions
+y:Original classifications 
+n=Number of iterations
 
 
-python setup.py install
+
+
+
+
