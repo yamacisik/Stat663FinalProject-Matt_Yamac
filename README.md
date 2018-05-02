@@ -11,6 +11,10 @@ $ pip install bayesian_clustering
 
 or
 
+$ pip install --index-url https://test.pypi.org/simple/ bayesianclusteringv2
+
+or
+
 $ git clone https://github.com/rahulrrixe/Stat663FinalProject-Matt_Yamac.git
 $ cd
 
