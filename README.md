@@ -32,10 +32,10 @@ y:numpy array giving the classifications of each observations
 tree: A tree structure which uses nodes, can be further used in the impurity calculations
 
 # Impurity Calculation
-```bash
+```python
   >>>from bayes_cluster import measures
   >>>measures.impurity(tree,yhat,y,n=500)
-      
+  ```
 tree: Tree structure given by the algorithm
 yhat: Classification predictions
 y:Original classifications 
