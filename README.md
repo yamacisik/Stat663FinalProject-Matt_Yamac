@@ -15,10 +15,11 @@ $ pip install --index-url https://test.pypi.org/simple/ bayes_cluster
 
 # Cluster Function
 
-```bash
-  >>>from bayes_cluster import cluster
-  >>>y_hat,tree=cluster.clust(X,alpha,kappa0,v0,mu0,eta0,k=3)
-
+ ```bash
+  >>> from SECEdgar.crawler import SecCrawler
+  >>> secCrawler = SecCrawler()
+  >>> secCrawler.filing_10K('AAPL', '0000320193', '20010101', '10')
+   ```
 
 
 X: Features of the data set, must be a numpy array
