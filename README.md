@@ -27,7 +27,7 @@ alpha:parameter to be set based on the number of clusters
 kappa0,v0,mu0,eta0 : See the report for explanations
 
 k: number of clusters to be determined
-```
+
 
 Returns a numpy array y, and a tree node structure tree
 
@@ -48,7 +48,7 @@ yhat: predictions of the classifications
 y:original classification coming from the data set
 
 n=number of iterations
-```
+
 
 
 
