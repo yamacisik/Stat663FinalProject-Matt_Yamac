@@ -1,10 +1,9 @@
 # Stat663FinalProject-Matt_Yamac
-Final Project, Sta 663 Matt Welch and Yamac Isik 
+Final Project for Sta 663  by Matt Welch and Yamac Isik.
 
 # Bayesian Hierarchical Clustering
 
-An hiearchichal clustering method which uses a multvariate normal distribution as a prior distribution. The clusters are formed based on the likelihood calculations for the Hypothesis of two different clusters belonging to a same cluster. For more information see :
-http://www2.stat.duke.edu/~kheller/bhcnew.pdf
+An hiearchichal clustering method that uses a prior distribution to decide which clusters to form. For more information on the algorithm see : http://www2.stat.duke.edu/~kheller/bhcnew.pdf
 
 Package is downloadable and installable via pip
 
