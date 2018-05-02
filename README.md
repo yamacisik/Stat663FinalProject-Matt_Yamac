@@ -18,7 +18,7 @@ $ pip install --index-url https://test.pypi.org/simple/ bayes_cluster
 ```bash
   >>>from bayes_cluster import cluster
   >>>y_hat,tree=cluster.clust(X,alpha,kappa0,v0,mu0,eta0,k=3)
-   ```
+
 
 
 X: Features of the data set, must be a numpy array
@@ -34,7 +34,7 @@ tree: A tree structure which uses nodes, can be further used in the impurity cal
 ```bash
   >>>from bayes_cluster import measures
   >>>measures.impurity(tree,yhat,y,n=500)
-      ```
+      
 tree: Tree structure given by the algorithm
 yhat: Classification predictions
 y:Original classifications 
