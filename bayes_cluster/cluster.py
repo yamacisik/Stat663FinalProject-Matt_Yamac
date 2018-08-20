@@ -1,4 +1,4 @@
-## Define a new class called note which has the data points d_k and the number of the cluster
+## Define a new class called note which has the data points d_k and the number of the clusters
 
 
 import numpy as np
