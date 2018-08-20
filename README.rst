@@ -18,6 +18,7 @@ or
 
 Documentation
 ---------------------
+
 **Cluster Function**
 
 .. code-block:: python
@@ -45,6 +46,7 @@ Returns **y, tree**
 
 - **tree** : A tree node structure to be used in the impurity calculations
 
+
  **Impurity Measurement**
  
 .. code-block:: python
@@ -59,7 +61,7 @@ Returns **y, tree**
 
 - **y**:original classification coming from the data set
 
-- **n**=number of iterations
+- **n** :number of iterations
 
 
 
