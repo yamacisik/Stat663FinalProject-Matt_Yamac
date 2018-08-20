@@ -1,3 +1,4 @@
+=======
 Final Project for Sta 663  by Matt Welch and Yamac Isik
 =======
 
@@ -17,43 +18,48 @@ or
 
 Documentation
 ---------------------
-### Cluster Function
+**Cluster Function**
 
-```python
-  >>> from bayes_cluster import cluster
-  >>> cluster.clust()
-  >>> clust(X,alpha,kappa0,v0,mu0,eta0,k)
-   ```
- Var:
- 	\alpha
-*X: Features of the data set, must be a numpy array
+.. code-block:: python
+>>> from bayes_cluster import cluster
+>>> cluster.clust()
+>>> clust(X,alpha,kappa0,v0,mu0,eta0,k)
+>>>
+  
 
-*alpha:parameter to be set based on the number of clusters
 
-@kappa0,v0,mu0,eta0 : See the report for explanations
+ Input Variables:
 
-@k: number of clusters to be determined
+- **X**: Features of the data set, must be a numpy array
 
-Returns a numpy array y, and a tree node structure tree
+- **alpha**:parameter to be set based on the number of clusters
 
-@y:numpy array giving the classifications of each observations
+- **kappa0, v0, mu0, eta0** :Parameters of the prior distribution, see the corresponding report for details.
 
-@tree: A tree structure which uses nodes, can be further used in the impurity calculations
+- **k** : number of clusters to be determined
 
- ---Impurity Measurement---
+Returns **y, tree** 
+
+ Output Variables:
+- **y** :Numpy array giving the classifications of each observations
+
+- **tree** : A tree node structure to be used in the impurity calculations
+
+ **Impurity Measurement**
  
-```python
+.. code-block:: python
+
   >>> from bayes_cluster import cluster,measures
   >>>measures.impurity(tree,yhat,y,n=500)
-  ```
+  >>>
 
-@tree: tree node given by the algorithm
+- **tree**: tree node given by the algorithm
 
-@yhat: predictions of the classifications
+- **yhat**: predictions of the classifications
 
-@y:original classification coming from the data set
+- **y**:original classification coming from the data set
 
-@n=number of iterations
+- **n**=number of iterations
 
 
 
