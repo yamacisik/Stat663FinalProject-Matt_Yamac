@@ -1,11 +1,11 @@
-# Stat663FinalProject-Matt_Yamac
-Final Project for Sta 663  by Matt Welch and Yamac Isik.
+Final Project for Sta 663  by Matt Welch and Yamac Isik
+=======
 
-# Bayesian Hierarchical Clustering
+## Bayesian Hierarchical Clustering
 
-An hiearchichal clustering method that uses a prior distribution to decide which clusters to form.This algorithm uses a tree node structure class to build the resulting tree coming the clustering process. For more information on the algorithm see : http://www2.stat.duke.edu/~kheller/bhcnew.pdf
+An hiearchichal clustering method that uses a conjugate prior to form the clusters. The algorithm uses a tree node class to build the a tree resulting from the clustering process. For more information on the algorithm see : http://www2.stat.duke.edu/~kheller/bhcnew.pdf
 
-Package is downloadable and installable via pip
+Package is downloadable and installable via pip. Just type 
 
 $ pip install bayescluster
 
@@ -13,18 +13,20 @@ or
 
 $ pip install --index-url https://test.pypi.org/simple/ bayescluster
 
-# Using the Package
+## Documentation
 
 ---Cluster Function---
 
 ```python
-  >>> from bayes_cluster import cluster,mesures
+  >>> from bayes_cluster import cluster
   >>> cluster.clust()
   >>> clust(X,alpha,kappa0,v0,mu0,eta0,k)
    ```
-@X: Features of the data set, must be a numpy array
+ Var:
+ 
+*X: Features of the data set, must be a numpy array
 
-@alpha:parameter to be set based on the number of clusters
+*alpha:parameter to be set based on the number of clusters
 
 @kappa0,v0,mu0,eta0 : See the report for explanations
 
@@ -39,7 +41,7 @@ Returns a numpy array y, and a tree node structure tree
  ---Impurity Measurement---
  
 ```python
-  >>> from bayes_cluster import cluster,mesures
+  >>> from bayes_cluster import cluster,measures
   >>>measures.impurity(tree,yhat,y,n=500)
   ```
 
